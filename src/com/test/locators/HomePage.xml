@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locator>
+	<Dashboard>
+		<home><![CDATA[//a[contains(text(), 'Home')]]]></home>
+	</Dashboard>
+
+	<Hotels>
+		<location><![CDATA[//div[@id='s2id_autogen3']/a/span[2]]]></location>
+		<locationcity><![CDATA[//div[@id='select2-drop']/div/input]]></locationcity>
+		<locationname><![CDATA[//span[contains(text(), 'New De')]]]></locationname>
+		<checkindate><![CDATA[//input[@class='form input-lg dpd1']]]></checkindate>
+		<checkoutdate><![CDATA[//input[@class='form input-lg dpd2']]]></checkoutdate>
+		<selectadults><![CDATA[//select[@id='adults']]]></selectadults>
+		<selectchild><![CDATA[//select[@id='child']]]></selectchild>
+		<searchbutton><![CDATA[//button[@class='btn-warning btn btn-lg btn-block']]]></searchbutton>
+	</Hotels>
+</Locator>

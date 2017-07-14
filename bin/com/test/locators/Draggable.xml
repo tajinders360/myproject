@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locator>
+	<Draggable>
+		<draggableicon><![CDATA[//li[@id='menu-item-140']/a]]></draggableicon>
+		<degamethere><![CDATA[//div[@id='draggable']]]></degamethere>
+		<constrainttab><![CDATA[//a[@id='ui-id-2']]]></constrainttab>
+		<constraint><![CDATA[//div[@id='draggabl']]]></constraint>
+		<destination><![CDATA[//div[@id='containment-wrapper']]]></destination>
+
+		<droppable><![CDATA[//li[@id='menu-item-141']/a]]></droppable>
+		<draggableview><![CDATA[//div[@id='draggableview']]]></draggableview>
+		<droppableview><![CDATA[//div[@id='droppableview']]]></droppableview>
+
+	</Draggable>
+
+	<Accordion>
+		<accordion><![CDATA[//li[@id='menu-item-144']/a]]></accordion>
+		<section1><![CDATA[//div[@id='ui-id-5']/p[contains(text(),'Mauris mauris ante')]]]></section1>
+		<section2link><![CDATA[//h3[@id='ui-id-6']]]></section2link>
+		<section2><![CDATA[//div[@id='ui-id-7']/p[contains(text(),'Sed non urna.')]]]></section2>
+		<section3link><![CDATA[//h3[@id='ui-id-8']]]></section3link>
+		<section3><![CDATA[//div[@id='ui-id-9']/p[contains(text(),'Nam enim risus,')]]]></section3>
+		<section4link><![CDATA[//h3[@id='ui-id-10']]]></section4link>
+		<section4><![CDATA[//div[@id='ui-id-11']/p[contains(text(),'Cras dictum.')]]]></section4>
+	</Accordion>
+
+
+</Locator>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locator>
+	<Login>
+		<myaccount><![CDATA[//a[@class='dropdown-toggle']/i]]></myaccount>
+		<login><![CDATA[//a[@href='http://www.phptravels.net/login']]]></login>
+		<email><![CDATA[//input[@name='username']]]></email>
+		<password><![CDATA[//input[@name='password']]]></password>
+		<loginbutton><![CDATA[//button[@class='btn btn-action btn-block loginbtn']]]></loginbutton>
+		<verifytitle><![CDATA[My Account]]></verifytitle>
+	</Login>
+
+	<Logout>
+		<accountname><![CDATA[//a[@class='dropdown-toggle']/i]]></accountname>
+		<logout><![CDATA[//a[contains(text(), 'Logout')]]]></logout>
+	</Logout>
+</Locator>

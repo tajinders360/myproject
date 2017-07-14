@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Test" default="Run" basedir=".">
+	<target name="delete">
+		<delete dir="bin"/>
+		<delete dir="test-output"/>
+	</target>
+
+	<path id="classpath">
+			<pathelement location="lib/selenium-server-standalone-3.1.0.jar" />
+			<pathelement location="lib/testng-6.11.jar" />
+			<pathelement location="bin" />
+		</path>
+
+	<target name="create" depends="delete">
+		<mkdir dir="bin" />
+		<mkdir dir="test-output" />
+	</target>
+	
+	<!--
+	<target name="copy" depends="create">
+		<copydir dest="E:\Tajinder\Selenium\Test\Ant\Build\src" src="E:\Tajinder\Selenium\Test\src" excludes="**/lib/**" ></copydir>
+		<copy todir="E:\Tajinder\Selenium\Test\Ant\Build\lib" overwrite="true">
+			<fileset dir="E:\Tajinder\Selenium\Test\lib" includes="**/*.jar"></fileset> 
+		</copy>
+	</target>
+	
+ -->
+  
+	<target name="compile" depends="create">
+		<javac classpathref="classpath" srcdir="E:/Tajinder/Selenium/Test/src" destdir="E:/Tajinder/Selenium/Test/bin" includes="**/*.java" includeantruntime="true" />
+	</target>
+
+	
+	<target name="Run" depends="compile">
+		<taskdef name="testng"  classpathref="classpath" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath" outputdir="test-output">
+		<xmlfileset dir="." includes="testng.xml" />
+	</testng>
+</target>
+
+
+</project>
+
+
