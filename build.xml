@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Test" default="Run" basedir=".">
+<project name="Test_Project" default="Run" basedir=".">
 	<target name="delete">
 		<delete dir="bin"/>
 		<delete dir="test-output"/>
